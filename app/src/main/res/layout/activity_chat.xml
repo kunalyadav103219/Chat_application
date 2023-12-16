@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".chat">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/appcolor"
+        android:textColor="@color/white">
+        <ImageButton
+            android:layout_marginTop="@dimen/_6sdp"
+            android:id="@+id/backp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:background="@drawable/backpressed"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="8dp" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/_55sdp"
+
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/chat_tollbarimage"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:gravity="start"
+                app:civ_border_color="#B6AFAF"
+                app:civ_border_width="2dp"
+                android:src="@drawable/cm24" />
+
+            <TextView
+                android:id="@+id/toolbarTitleTextView"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Chat with Dost"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbarTitleTextView"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="op"
+                android:textColor="@color/teal_200"
+                android:textSize="16sp" />
+            <!--            <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton-->
+            <!--                android:id="@+id/new_voice_call"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:layout_marginEnd="50dp"/>-->
+
+            <!--            <com.zegocloud.uikit.prebuilt.call.invite.widget.ZegoSendCallInvitationButton-->
+            <!--                android:id="@+id/new_video_call"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:layout_alignParentEnd="true"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:layout_marginLeft="@dimen/_180sdp"-->
+            <!--                android:layout_marginEnd="0dp" />-->
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="8dp"
+        android:layout_marginTop="50dp"
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/inputLayout"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp"
+        android:scrollbars="vertical" />
+
+    <RelativeLayout
+        android:id="@+id/inputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+
+        <ImageView
+            android:id="@+id/selectedImageView"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:visibility="gone" />
+
+        <EditText
+            android:padding="@dimen/_5sdp"
+            android:background="@drawable/chatboxdesign"
+            android:id="@+id/messageEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_33sdp"
+            android:layout_toStartOf="@id/sendButton"
+            android:hint="Type a message..."
+            android:inputType="textMultiLine"
+            android:minLines="1"
+            android:maxLines="3"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_send"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="3dp" />
+    </RelativeLayout>
+</RelativeLayout>

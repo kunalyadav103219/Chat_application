@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp"
+    app:cardElevation="@dimen/_20sdp"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    android:elevation="@dimen/_50sdp"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/_5sdp"
+            >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/avtr"
+            app:civ_border_color="#B6AFAF"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:gravity="center"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="17dp"
+            android:text="Username"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="15dp"
+        android:text="online"
+        android:textColor="@color/teal_200"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/lastmessage_Time"
+        android:layout_width="wrap_content"
+        android:layout_height="21dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="15dp"
+        android:text="online"
+        android:textColor="#063234"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/currentMessage"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="25dp"
+
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="65dp"
+        android:ellipsize="end"
+
+        android:maxLines="1"
+        android:text="Hello, this is new one haha ha ahahh ahaha"
+
+        android:textSize="16sp" />
+</androidx.cardview.widget.CardView>
+
+
+
+
+
+

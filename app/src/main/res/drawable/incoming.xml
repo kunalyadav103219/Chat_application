@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background for outgoing messages -->
+    <item
+        android:left="8dp"
+        android:top="8dp"
+        android:bottom="8dp">
+        <shape
+            android:shape="rectangle">
+            <corners
+                android:bottomRightRadius="16dp"
+                android:topRightRadius="16dp"
+                android:bottomLeftRadius="16dp" />
+            <solid android:color="#E0E0E0" /> <!-- Incoming message color -->
+        </shape>
+    </item>
+
+</layer-list>

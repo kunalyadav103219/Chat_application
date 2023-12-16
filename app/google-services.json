@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "538924247123",
+    "project_id": "expp-50a66",
+    "storage_bucket": "expp-50a66.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538924247123:android:bee1f6dbf98d614f017ea6",
+        "android_client_info": {
+          "package_name": "com.example.expp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyWR-QvHkU2x1ldxSjHhLGDliQld5_r7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

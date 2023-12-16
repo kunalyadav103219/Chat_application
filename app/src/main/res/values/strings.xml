@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">expp</string>
+    <string name="last_seen_format">Last seen at %s</string>
+    <string name="online">Online</string>
+    <string name="just_now">Just now</string>
+    <string name="default_last_seen">Default Last Seen</string>
+</resources>
